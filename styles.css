@@ -76,7 +76,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 10px;
 }
 .another-pfp,.book-container{
     width: 50px;
@@ -121,6 +121,9 @@
     border-radius: 40px;
     border-color: #7c3aed;
     background-color: #ddd6fe;
+}
+.searchbar:focus{
+    background-color: #ffbbff;
 }
 button{
     border-radius: 25px;
