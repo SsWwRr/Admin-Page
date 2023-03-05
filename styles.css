@@ -28,6 +28,13 @@
     grid-template-rows: 1fr 2fr 2fr;
     row-gap: 30px;
 }
+.dashboard-option{
+    margin: 15px;
+}
+.text:hover,.small-icons{
+    color: rgb(179, 109, 248);
+    cursor: pointer;
+}
 .text{
     font-family: "Tilt Neon";
 }
@@ -116,11 +123,23 @@
     grid-template-columns: 3fr 1fr;
 }
 .searchbar{
-    width: 800px;
-    height: 40px;
+    width: 50vw;
+    height: 4vh;
+    position:relative;
     border-radius: 40px;
     border-color: #7c3aed;
     background-color: #ddd6fe;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+.searchbar::placeholder{
+    color: rgb(179, 109, 248);
+    font-family: "Tilt Neon";
+    font-size: larger;
+    position: absolute;
+    left: 20px;
+    top: 8px;
 }
 .searchbar:focus{
     background-color: #ffbbff;
