@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+*{
+    margin: 0;
+}
 .root{
     width: 100%;
     height: 100%;
@@ -11,6 +14,7 @@
 .body{
     width: 100%;
     height: 100%;
+    margin: 0;
 }
 /* .content,.dashboard-container,
 .dashboard-header-container,
@@ -86,17 +90,38 @@
 .profile-info{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
 }
-.question-title{
+.question-title,.review-topic{
     font-size: large;
     padding: 20px;
 }
-.question-question{
+.question-question,.review-review{
     padding: 20px;
+
+}
+.new-posts{
+    font-size: larger;
+    font-weight: bolder;
+    color: white;
 }
 .question-space{
+    overflow-y: scroll;
     background-color: #7c3aed;
-    border-radius: 50px;
+    border-radius: 10px;
+    width: 20vw;
+    height: 20vh;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    height: 15vh;
+}
+::-webkit-scrollbar-track{
+    background-color: #7c58b3;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #ffbbff;
+    height: 10px;
 }
 .header{
     display: grid;
@@ -104,7 +129,7 @@
 }
 .filler-container{
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows:1fr 5fr 5fr 5fr;
 }
 .searchbar-container{
     display: flex;
@@ -116,6 +141,7 @@
     width: 50px;
     height: 50px;
     background-color: rebeccapurple;
+    border-radius: 20px;
 }
 .mini-profile{
     display: grid;
@@ -132,13 +158,13 @@
     display: flex;
     justify-content: center;
 }
-.question-nickname{
+.question-nickname,.review-nickname{
     font-size: larger;
 }
 .filler{
     margin-right: 50px;
 }
-.question-space,.question-nickname{
+.question-space,.question-nickname,.review-nickname,.review-topic,.review-review{
     color: white;
     font-family: "Tilt Neon";
 }
@@ -152,7 +178,22 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-   gap: 20px;
+    gap: 50px;
+}
+.books-container-title{
+    font-size: 30px;
+    font-weight: bolder;
+}
+.book-container{
+    width: 15vw;
+    height: 30vh;
+    overflow-y:scroll ;
+}
+.books-container1{
+    display: grid;
+    grid-template-rows: 1fr 8fr;
+    align-items: center;
+    justify-items: center;
 }
 .main-container{
     width: 100%;
